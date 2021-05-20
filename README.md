@@ -2,7 +2,7 @@
 
 ## Introduction
 This is the implementation of the
-ICML2020 submission ["Towards Robust Adversarial Training via Dual-label Geometry Dispersion"]
+paper ["Towards Robust Adversarial Training via Dual-label Geometry Dispersion"]
 
 ## Usage
 ### Installation
