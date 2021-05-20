@@ -1,0 +1,1 @@
+CUDA_VISIBLE_DEVICES=0 python eval.py --attack=True --attack_method_list=natural-fgsm-pgd --dataset=cifar10 --num_classes 10 --resume
