@@ -84,7 +84,7 @@ print('==> Preparing data..')
 if args.dataset == 'cifar10' or args.dataset == 'cifar100':
     transform_test = transforms.Compose([
         transforms.ToTensor(),
-        transforms.Normalize((0.5, 0.5, 0.5), (0.5, 0.5, 0.5)),  # [-1 1]
+#         transforms.Normalize((0.5, 0.5, 0.5), (0.5, 0.5, 0.5)),  # [-1 1]
     ])
 
 if args.dataset == 'cifar10':
