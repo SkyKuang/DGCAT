@@ -97,7 +97,7 @@ class Attack_PGD(nn.Module):
                 x.grad.data)
             x_adv = torch.min(torch.max(x_adv, inputs - self.epsilon),
                               inputs + self.epsilon)
-            x_adv = torch.clamp(x_adv, -1.0, 1.0)
+            x_adv = torch.clamp(x_adv, 0.0, 1.0)
             x = Variable(x_adv)
 
         if self.train_flag:
@@ -182,7 +182,7 @@ class Attack_GAT(nn.Module):
             x_adv = x.data + self.step_size * torch.sign(x.grad.data)
             x_adv = torch.min(torch.max(x_adv, inputs - self.epsilon),
                               inputs + self.epsilon)
-            x_adv = torch.clamp(x_adv, -1.0, 1.0)
+            x_adv = torch.clamp(x_adv, 0.0, 1.0)
             x = Variable(x_adv)
 
         logits_pred, fea = self.basic_net(x)
