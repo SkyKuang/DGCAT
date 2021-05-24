@@ -130,18 +130,18 @@ config_natural = {'train': False}
 config_fgsm = {
     'train': False,
     'targeted': False,
-    'epsilon': 8.0 / 255 * 2,
+    'epsilon': 8.0 / 255 * 1
     'num_steps': 1,
-    'step_size': 8.0 / 255 * 2,
+    'step_size': 8.0 / 255 * 1,
     'random_start': True
 }
 
 config_pgd = {
     'train': False,
     'targeted': False,
-    'epsilon': 8.0 / 255 * 2,
+    'epsilon': 8.0 / 255 * 1,
     'num_steps': 20,
-    'step_size': 2.0 / 255 * 2,
+    'step_size': 2.0 / 255 * 1,
     'random_start': True,
     'loss_func': torch.nn.CrossEntropyLoss(reduction='none')
 }
