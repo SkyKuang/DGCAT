@@ -84,7 +84,7 @@ print('==> Preparing data..')
 if args.dataset == 'cifar10' or args.dataset == 'cifar100':
     transform_test = transforms.Compose([
         transforms.ToTensor(),
-#         transforms.Normalize((0.5, 0.5, 0.5), (0.5, 0.5, 0.5)),  # [-1 1]
+        transforms.Normalize((0.5, 0.5, 0.5), (0.5, 0.5, 0.5)),  # [-1 1]
     ])
 
 if args.dataset == 'cifar10':
@@ -130,18 +130,18 @@ config_natural = {'train': False}
 config_fgsm = {
     'train': False,
     'targeted': False,
-    'epsilon': 8.0 / 255 * 1
+    'epsilon': 8.0 / 255 * 2
     'num_steps': 1,
-    'step_size': 8.0 / 255 * 1,
+    'step_size': 8.0 / 255 * 2,
     'random_start': True
 }
 
 config_pgd = {
     'train': False,
     'targeted': False,
-    'epsilon': 8.0 / 255 * 1,
+    'epsilon': 8.0 / 255 * 2,
     'num_steps': 20,
-    'step_size': 2.0 / 255 * 1,
+    'step_size': 2.0 / 255 * 2,
     'random_start': True,
     'loss_func': torch.nn.CrossEntropyLoss(reduction='none')
 }
