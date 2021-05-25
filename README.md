@@ -14,11 +14,10 @@ pip install tqdm
 ```
 
 #### Results
-
 | Datasets     | Clear | FGSM   | PGD-20    |      Model                                                   |
 | ------------ | -------------- | --------  | ------------------------------------------------------------ |
-| CIFAR-10     | 76.4% | 93.47% |  93.47%   | [Modellink](https://drive.google.com) |
-| CIFAR-100    | 55.6% | 93.47% |  93.54%   | [Modellink](https://drive.google.com) |
+| CIFAR-10     | 76.4% | 93.47% |  93.47%   | [Modellink](https://drive.google.com)                        |
+| CIFAR-100    | 55.6% | 93.47% |  93.54%   | [Modellink](https://drive.google.com)                        |
 <!-- | SVHN         | 66.0% | 93.47% |  94.12%   | [Modellink](https://drive.google.com/drive/folders/1h-eSUbtJ_xO3wlnQ7J3Pl8bBsuTEw9LJ?usp=sharing) | -->
 
 
