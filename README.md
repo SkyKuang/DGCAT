@@ -10,7 +10,6 @@ The training environment (PyTorch and dependencies) can be installed as follows:
 ```
 cd DGDAT-master
 python setup.py install
-pip install tqdm
 ```
 
 #### Results
