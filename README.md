@@ -16,7 +16,7 @@ python setup.py install
 | Datasets     | Clear | FGSM   | PGD-100    | Model                                                   |
 | ------------ | ------|--------| -------- | ----------------------------------------------------------|
 | CIFAR-10     | 90.4% | 77.5%  |  65.6%   | [Modellink](https://drive.google.com)                     |
-| CIFAR-100    | 73.1% | 68.9%  |  31.2%   | [Modellink](https://drive.google.com)                     |
+| CIFAR-100    | 72.3% | 69.3%  |  31.2%   | [Modellink](https://drive.google.com)                     |
 | SVHN         | 95.6% | 91.4%  |  75.1%   | [Modellink](https://drive.google.com)                     |
 ### Train
 ```
