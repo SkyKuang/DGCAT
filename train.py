@@ -116,12 +116,12 @@ if args.dataset == 'cifar10' or args.dataset == 'cifar100':
         transforms.RandomCrop(32, padding=4),
         transforms.RandomHorizontalFlip(),
         transforms.ToTensor(),
-        # transforms.Normalize((0.5, 0.5, 0.5), (0.5, 0.5, 0.5)),  # [-1 1]
+        transforms.Normalize((0.5, 0.5, 0.5), (0.5, 0.5, 0.5)),  # [-1 1]
     ])
 
     transform_test = transforms.Compose([
         transforms.ToTensor(),
-        # transforms.Normalize((0.5, 0.5, 0.5), (0.5, 0.5, 0.5)),  # [-1 1]
+        transforms.Normalize((0.5, 0.5, 0.5), (0.5, 0.5, 0.5)),  # [-1 1]
     ])
 
 if args.dataset == 'cifar10':
@@ -182,9 +182,9 @@ basic_net = basic_net.to(device)
 # config for feature scatter
 config_feature_scatter = {
     'train': True,
-    'epsilon': 8.0 / 255 * 1,
+    'epsilon': 8.0 / 255 * 2,
     'num_steps': 1,
-    'step_size': 8.0 / 255 * 1,
+    'step_size': 8.0 / 255 * 2,
     'random_start': True,
     'ls_factor': 0.5,
     'alpha':0.4
