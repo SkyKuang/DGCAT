@@ -17,7 +17,7 @@ python setup.py install
 | ------------ | ------|--------| -------- | ----------------------------------------------------------              |
 | CIFAR-10     | 90.4% | 77.5%  |  65.6%   | [Modellink](https://pan.baidu.com/s/1YY_86kmFSTZaGK2DHD5FFw):4e8i     |
 | CIFAR-100    | 72.8% | 69.3%  |  39.4%   | [Modellink](https://pan.baidu.com/s/1-dfhxl-nL4GnLk7L-U7HVg):olr6     | 
-| SVHN         | 95.6% | 91.4%  |  75.1%   | [Modellink](https://pan.baidu.com/s/1pmjG4ddW5Ic-NERfDjYxzQ):zup6     |
+| SVHN         | 96.6% | 95.4%  |  76.1%   | [Modellink](https://pan.baidu.com/s/1pmjG4ddW5Ic-NERfDjYxzQ):zup6     |
 ### Train
 ```
 sh ./train.sh
