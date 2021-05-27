@@ -1,4 +1,4 @@
-# Towards Robust Adversarial Training via Dual-label Geometry Dispersion
+# Towards Robust Adversarial Training via Geometry Constraint and Dual label Supervised
 
 ## Introduction
 This is the implementation of the
